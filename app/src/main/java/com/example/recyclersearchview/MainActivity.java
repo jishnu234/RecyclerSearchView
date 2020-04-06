@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         MenuItem searchItem=menu.findItem(R.id.search);
         SearchView searchView=(SearchView)searchItem.getActionView();
-        searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
+        searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);//<-this takes away the search icon from the keyBoard
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
